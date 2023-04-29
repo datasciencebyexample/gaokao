@@ -11,19 +11,19 @@
 	<a href="index.html" class="back-to-main">&larr; Back to main page</a>
         <h1>University Search</h1>
         <form id="searchForm">
-            <label for="genericSearch">Generic Search</label>
+            <label for="genericSearch">大学查找</label>
             <input type="radio" id="genericSearch" name="searchType" value="generic" checked>
-            <label for="rankOnly">Rank Only</label>
+            <label for="rankOnly">只看排名</label>
             <input type="radio" id="rankOnly" name="searchType" value="rank">
             <br>
             <div id="genericFields">
-                <label for="univName">University Name:</label>
+                <label for="univName">大学名字:</label>
                 <input type="text" id="univName" name="univName">
                 <br>
-                <label for="majorDesc">Major Description:</label>
+                <label for="majorDesc">优势专业:</label>
                 <input type="text" id="majorDesc" name="majorDesc">
                 <br>
-				<label for="tagList">Tags (multiple, optional):</label>
+				<label for="tagList">大学标签 (可多选):</label>
 				<select id="tagList" name="tagList" multiple>
 					<option value="地方公办">地方公办</option>
 					<option value="理工">理工</option>
@@ -48,7 +48,7 @@
 
 				</select>
                 <br>
-                <label for="province">Province:</label>
+                <label for="province">省份:</label>
                 <select id="province" name="province">
 					<option value="" disabled selected>选择省份</option>
 					<option value="山东">山东</option>
@@ -86,7 +86,7 @@
                 <br>
             </div>
             <div id="rankFields" style="display: none;">
-                <label for="rank">Rank:</label>
+                <label for="rank">排名:</label>
                 <select id="rank" name="rank">
                     <option value="" disabled selected>Select Rank</option>
 					<option value="1%以前">1%以前</option>
@@ -167,7 +167,7 @@
                 </select>
                 <br>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">提交</button>
         </form>
         <div id="results">
             <!-- Results will be displayed here -->
