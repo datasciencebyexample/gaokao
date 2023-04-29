@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+	<a href="index.html" class="back-to-main">&larr; Back to main page</a>
+        <h1>University Search</h1>
+        <form id="searchForm">
+            <label for="genericSearch">Generic Search</label>
+            <input type="radio" id="genericSearch" name="searchType" value="generic" checked>
+            <label for="rankOnly">Rank Only</label>
+            <input type="radio" id="rankOnly" name="searchType" value="rank">
+            <br>
+            <div id="genericFields">
+                <label for="univName">University Name:</label>
+                <input type="text" id="univName" name="univName">
+                <br>
+                <label for="majorDesc">Major Description:</label>
+                <input type="text" id="majorDesc" name="majorDesc">
+                <br>
+				<label for="tagList">Tags (multiple, optional):</label>
+				<select id="tagList" name="tagList" multiple>
+					<option value="地方公办">地方公办</option>
+					<option value="理工">理工</option>
+					<option value="综合">综合</option>
+					<option value="民办高校">民办高校</option>
+					<option value="师范">师范</option>
+					<option value="双一流">双一流</option>
+					<option value="211">211</option>
+					<option value="医药">医药</option>
+					<option value="财经">财经</option>
+					<option value="教育部直属">教育部直属</option>
+					<option value="艺术">艺术</option>
+					<option value="985">985</option>
+					<option value="农业">农业</option>
+					<option value="中央部属">中央部属</option>
+					<option value="政法">政法</option>
+					<option value="语言">语言</option>
+					<option value="民族">民族</option>
+					<option value="体育">体育</option>
+					<option value="中外合作">中外合作</option>
+					<option value="林业">林业</option>
+
+				</select>
+                <br>
+                <label for="province">Province:</label>
+                <select id="province" name="province">
+					<option value="" disabled selected>选择省份</option>
+					<option value="山东">山东</option>
+					<option value="广东">广东</option>
+					<option value="江苏">江苏</option>
+					<option value="湖北">湖北</option>
+					<option value="北京">北京</option>
+					<option value="河南">河南</option>
+					<option value="辽宁">辽宁</option>
+					<option value="浙江">浙江</option>
+					<option value="河北">河北</option>
+					<option value="四川">四川</option>
+					<option value="陕西">陕西</option>
+					<option value="安徽">安徽</option>
+					<option value="湖南">湖南</option>
+					<option value="黑龙江">黑龙江</option>
+					<option value="上海">上海</option>
+					<option value="江西">江西</option>
+					<option value="福建">福建</option>
+					<option value="吉林">吉林</option>
+					<option value="广西">广西</option>
+					<option value="山西">山西</option>
+					<option value="云南">云南</option>
+					<option value="贵州">贵州</option>
+					<option value="重庆">重庆</option>
+					<option value="天津">天津</option>
+					<option value="甘肃">甘肃</option>
+					<option value="内蒙古">内蒙古</option>
+					<option value="新疆">新疆</option>
+					<option value="海南">海南</option>
+					<option value="宁夏">宁夏</option>
+					<option value="青海">青海</option>
+					<option value="西藏">西藏</option>
+                </select>
+                <br>
+            </div>
+            <div id="rankFields" style="display: none;">
+                <label for="rank">Rank:</label>
+                <select id="rank" name="rank">
+                    <option value="" disabled selected>Select Rank</option>
+					<option value="1%以前">1%以前</option>
+					<option value="2%以前">2%以前</option>
+					<option value="3%以前">3%以前</option>
+					<option value="4%以前">4%以前</option>
+					<option value="5%以前">5%以前</option>
+					<option value="6%以前">6%以前</option>
+					<option value="7%以前">7%以前</option>
+					<option value="8%以前">8%以前</option>
+					<option value="9%以前">9%以前</option>
+					<option value="10%以前">10%以前</option>
+					<option value="11%以前">11%以前</option>
+					<option value="12%以前">12%以前</option>
+					<option value="13%以前">13%以前</option>
+					<option value="14%以前">14%以前</option>
+					<option value="15%以前">15%以前</option>
+					<option value="16%以前">16%以前</option>
+					<option value="17%以前">17%以前</option>
+					<option value="18%以前">18%以前</option>
+					<option value="19%以前">19%以前</option>
+					<option value="20%以前">20%以前</option>
+					<option value="21%以前">21%以前</option>
+					<option value="22%以前">22%以前</option>
+					<option value="23%以前">23%以前</option>
+					<option value="24%以前">24%以前</option>
+					<option value="25%以前">25%以前</option>
+					<option value="26%以前">26%以前</option>
+					<option value="27%以前">27%以前</option>
+					<option value="28%以前">28%以前</option>
+					<option value="29%以前">29%以前</option>
+					<option value="30%以前">30%以前</option>
+					<option value="31%以前">31%以前</option>
+					<option value="32%以前">32%以前</option>
+					<option value="33%以前">33%以前</option>
+					<option value="34%以前">34%以前</option>
+					<option value="35%以前">35%以前</option>
+					<option value="36%以前">36%以前</option>
+					<option value="37%以前">37%以前</option>
+					<option value="38%以前">38%以前</option>
+					<option value="39%以前">39%以前</option>
+					<option value="40%以前">40%以前</option>
+					<option value="41%以前">41%以前</option>
+					<option value="42%以前">42%以前</option>
+					<option value="43%以前">43%以前</option>
+					<option value="44%以前">44%以前</option>
+					<option value="45%以前">45%以前</option>
+					<option value="46%以前">46%以前</option>
+					<option value="47%以前">47%以前</option>
+					<option value="48%以前">48%以前</option>
+					<option value="49%以前">49%以前</option>
+					<option value="50%以前">50%以前</option>
+					<option value="51%以前">51%以前</option>
+					<option value="52%以前">52%以前</option>
+					<option value="53%以前">53%以前</option>
+					<option value="54%以前">54%以前</option>
+					<option value="55%以前">55%以前</option>
+					<option value="56%以前">56%以前</option>
+					<option value="57%以前">57%以前</option>
+					<option value="58%以前">58%以前</option>
+					<option value="59%以前">59%以前</option>
+					<option value="60%以前">60%以前</option>
+					<option value="60%以外">60%以外</option>
+					<option value="民办5%以前">民办5%以前</option>
+					<option value="民办10%以前">民办10%以前</option>
+					<option value="民办15%以前">民办15%以前</option>
+					<option value="民办20%以前">民办20%以前</option>
+					<option value="民办25%以前">民办25%以前</option>
+					<option value="民办30%以前">民办30%以前</option>
+					<option value="民办35%以前">民办35%以前</option>
+					<option value="民办40%以前">民办40%以前</option>
+					<option value="民办45%以前">民办45%以前</option>
+					<option value="民办50%以前">民办50%以前</option>
+					<option value="民办55%以前">民办55%以前</option>
+					<option value="民办50%以外">民办50%以外</option>
+					<option value="艺术类不计算排名">艺术类不计算排名</option>
+					<option value="无排名">无排名</option>
+                </select>
+                <br>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
