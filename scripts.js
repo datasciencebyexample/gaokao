@@ -109,10 +109,26 @@ document.querySelectorAll('input[name="searchType"]').forEach(radio => {
     });
 });
 
-// add this to refresh page when radio button is clicked
+// Add this code to handle radio button change event
 document.querySelectorAll('input[name="searchType"]').forEach(radio => {
     radio.addEventListener('change', () => {
-        // Refresh the page when a radio button is clicked
-        location.reload();
+        const genericFields = document.getElementById('genericFields');
+        const rankFields = document.getElementById('rankFields');
+        if (radio.value === 'generic') {
+            genericFields.style.display = 'block';
+            rankFields.style.display = 'none';
+        } else {
+            genericFields.style.display = 'none';
+            rankFields.style.display = 'block';
+        }
+        resetInputFields();
     });
 });
+
+function resetInputFields() {
+    document.getElementById('univName').value = '';
+    document.getElementById('majorDesc').value = '';
+    document.getElementById('tagList').selectedIndex = -1;
+    document.getElementById('province').selectedIndex = 0;
+    document.getElementById('rank').selectedIndex = 0;
+}
