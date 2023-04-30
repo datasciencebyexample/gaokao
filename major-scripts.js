@@ -116,7 +116,7 @@ function displayUnivResults(data) {
 
     const table = document.createElement('table');
     const headerRow = document.createElement('tr');
-    const headers = ['Major Name', 'University Name', 'Major Rank'];
+    const headers = ['专业', '大学', '专业评级'];
 
     headers.forEach(headerText => {
         const header = document.createElement('th');
