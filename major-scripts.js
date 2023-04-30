@@ -105,6 +105,9 @@ async function fetchMajorUniv(majorName) {
     //];
 
     displayUnivResults(data);
+	
+    // Scroll to the beginning of the univResults div
+    document.getElementById('univResults').scrollIntoView({ behavior: 'smooth' });
 }
 
 function displayUnivResults(data) {
