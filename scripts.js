@@ -108,3 +108,11 @@ document.querySelectorAll('input[name="searchType"]').forEach(radio => {
         }
     });
 });
+
+// add this to refresh page when radio button is clicked
+document.querySelectorAll('input[name="searchType"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+        // Refresh the page when a radio button is clicked
+        location.reload();
+    });
+});
